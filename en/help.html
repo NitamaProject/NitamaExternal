@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Nitama Help</title>
+  <title>Nitama External Help</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -44,13 +44,14 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span>Nitama Help</span>
+        <span>Nitama External Help</span>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="https://t.me/nitamaloader_en">Telegram</a></li>
-          <li><a class="getstarted scrollto" href="index.html">Back to the main page</a></li>
+          <li><a href="https://t.me/nitamaproject">Telegram</a></li>
+          <li><a href="https://vk.com/nitamaproject">VK</a></li>
+          <li><a class="getstarted scrollto" href="index.html">На главную</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -65,52 +66,60 @@
       <div class="container">
 
         <ol>
-          <li><a href="index.html">Main Page</a></li>
-          <li>Help</li>
+          <li><a href="index.html">Главная</a></li>
+          <li>Помощь</li>
         </ol>
-        <h2>Solving CS:GO and Nitama Loader problems</h2>
+        <h2>Решение проблем связанных с CS:GO и c Nitama External</h2>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
       <div class="container" style="color: var(--text-color);">
-        <h2>1. Game crashes / DLC does not inject</h2>
+        <h2>1. Крашит/Не запускается</h2>
         <p>
-          1.1. Go to the settings, click on the "Virus and threat protection", then under the "Virus and threat protection settings" block you see the blue text "Manage settings", click on it and turn off "Real-time protection". After you turned off the antivirus, you must go back to the search. And write "Windows Defender Firewall", go there. Then in the left block "Turn Windows Defender Firewall on or off", click there. And check the boxes everywhere "Disable firewall ...". Restart the loader.
+          Переходим в настройки, кликаем на блок "Защита от вирусов и угроз", далее под блоком "Параметры защиты от вирусов и других угроз" видим текст "Управление настройками", кликаем на него и отключаем "Защиту в режиме реального времени". После того как мы выключили антивирус, мы должны перейти опять же в поиск. Написать "Брандмауер защитника windows", заходим туда. Далее в левом блоке "Включение и отключение брандмауера Защитника Windows", кликаем туда. И ставим галочки везде "Отключить брандмауер...". Перезапустить чит.
         </p>
         <p>
-          1.2. If this happened when you first started the loader, try installing the packages from here: <a href="index.html#faq">Components</a>. If you just installed them, try rebooting the system.
+          1.2. Если это произошло, когда вы впервый раз запустили чит, попробуйте установить пакеты отсюда: <a href="index.html#faq">Компоненты</a>. Если же вы только их установили, попробуйте перезагрузить систему.
         </p>
+        <h2>2. Консоль не показывает ошибку, но чит не появляется</h2>
         <p>
-          1.3. Clear CS:GO cache, check the game files in the properties. If the solutions above didn't help you: Disable multicore processing in the CS:GO game settings. Start DLC.
+          Решение: игра должна быть в режиме окна
         </p>
-        <h2><a href="https://support.microsoft.com/en-us/windows/turn-off-defender-antivirus-protection-in-windows-security-99e6004f-c54c-8509-773c-a4d776b77960" target="_blank">2. General startup problems</a></h2>
-        <h2><a href="index.html#faq">3. Loader crashes / Loader does not inject the DLC</a></h2>
-        <h2>4. Game crashes when you inject DLC</h2>
+        <h2>3. Failed to get module address</h2>
         <p>
-          Solution: -disable_d3d9ex, in CS launch options or DLC may not be relevant - in that case write to the admin.
+          Решение: Запустите от имени администратора
         </p>
-        <h2>5. The strip on the site does not load / the site does not open</h2>
+        <h2>4. Подвисающие ESP</h2>
         <p>
-          You need to turn AdBlock off or switch to another browser. You can also open it in the incognito tab, because all browser plugins are disabled there.
+          Решение: Если вы играете на мощном ПК (с использованием графической карты NVIDIA), но по-прежнему наблюдается серьезная задержка, проверьте настройки NVIDIA Graphic 3D и установите для параметра «Максимальная частота кадров фонового приложения» более высокое значение.
         </p>
-        <h2>6. When downloading the update, it says - An unexpected error has occurred. / Loader file disapeared</h2>
+        <h2>5. Подсветка (glow) мигает</h2>
         <p>
-          Disable all antiviruses. Disable firewall.
+          Решение: Функция свечения фактически не изменяет данные свечения, а вместо этого использует эффект гранаты EnemySensor, поэтому так и должно быть
         </p>
-        <h2>7.How to open the cheat panel?</h2>
+        <h2>6. Smooth в аимботе не работает</h2>
         <p>
-          In most DLC - Insert button. There may be more keyboard shortcuts on different computers like shift + ins, fn + ins
+          Решение: поставьте от 0 или больше чем 0.3
         </p>
-        <h2>Did not find your problem?</h2>
-        <div class="read-more"><a href="index.html#faq">Write to support</a></div>
+        <h2>7. Аимбот работает только иногда</h2>
+        <p>
+          Решение: Известная ошибка проверки видимости. Отключение проверки видимости может решить эту проблему, но заблокирует игрока, находящегося за стеной.
+        </p>
+        <h2>8. Bone ESP скользит и дергается</h2>
+        <p>
+          Это проблема игры, а не чита)
+        </p>
+        <h2>Не нашли свою проблему?</h2>
+        <div class="read-more"><a href="https://t.me/nitama_support">Написать в поддержку</a></div>
       </div>
     </section>
 
   </main><!-- End #main -->
 
-<footer id="footer" class="footer">
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
 
     
 
@@ -122,9 +131,10 @@
               <img src="assets/img/logo.png" alt="">
               <span>Nitama Loader</span>
             </a>
-            <p>The best Loader on the DLC market for CS:GO.</p>
+            <p>Лучший Лоадер на рынке DLC для CS:GO.</p>
             <div class="social-links mt-3">
-              <a href="https://t.me/nitamaloader_en" target="_blank" class="twitter"><i class="bi bi-telegram"></i></a>
+              <a href="https://t.me/nitamaproject" target="_blank" class="twitter"><i class="bi bi-telegram"></i></a>
+              <a href="https://vk.com/nitamaproject" target="_blank" class="facebook"><i class="bi bi-vkontakte"></i>VK</a>
             </div>
           </div>
         </div>
