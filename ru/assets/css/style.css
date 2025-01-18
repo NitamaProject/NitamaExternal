@@ -522,7 +522,23 @@ section {
 .hero h1 em {
 	color: var(--highlight-color);
 	font-style: normal;
+  font-weight: 800;
 }
+
+.hero h1 .underline {
+	color: var(--text-color);
+	font-style: normal;
+  font-weight: 900; 
+  font-size: 22px;
+  padding: 2px;
+  padding-left: 12px;
+  margin-top: -4px;
+  margin-bottom: -62px;
+  display: flex;
+  border-radius: 6px;
+  background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(22, 88, 255));
+}
+
 .hero h2 {
   color: var(--context-color);
   margin: 20px 0 0 0;
