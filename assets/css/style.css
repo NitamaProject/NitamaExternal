@@ -1,16 +1,4 @@
-/**
-* Template Name: FlexStart
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
-
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 :root {
   scroll-behavior: smooth;
   --bg-color: #000000;
@@ -38,10 +26,10 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Onest", serif;
+  font-optical-sizing: auto;
   color: #444444;
   background: var(--bg-color);
-  
 }
 
 a {
@@ -60,7 +48,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Onest", serif;
 }
 
 /*--------------------------------------------------------------
@@ -81,7 +69,7 @@ section {
   border-radius: 12px;
 }
 
-.section-header  h2 {
+.section-header .title h2 {
   
   background: var(--highlight-color);
   display: flex;
@@ -95,8 +83,8 @@ section {
   border-radius: 6px;
 }
 
-.section-header p {
-  margin: 10px 0 0 30px;
+.section-header .title p {
+  margin: 14px 36px -10px 36px;
   padding: 0;
   font-size: 36px;
   font-weight: 600;
@@ -135,12 +123,12 @@ section {
   margin-top: 10px;
 }
 
-.breadcrumbs ol {
+.section-header ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   transition: 0.3s;
-  margin: 0;
+  margin: 36px 0px 0px 32px;
   font-size: 13px;
   padding: 10px;
   background-color: var(--border-color);
@@ -150,23 +138,23 @@ section {
   font-weight: 400;
   border: 1px solid var(--border-color);
 }
-.breadcrumbs ol:hover {
+.section-header ol:hover {
   background-color: var(--frame-color);
 }
-.breadcrumbs ol a {
+.section-header ol a {
   padding: 10px;
   color: var(--text-color);
   font-weight: 600;
   transition: 0.3s;
 }
 
-.breadcrumbs ol a:hover {
+.section-header ol a:hover {
   text-decoration: underline;
 }
-.breadcrumbs ol li+li {
+.section-header ol li+li {
   padding-right: 10px;
 }
-.breadcrumbs ol li+li::before {
+.section-header ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   padding-left: -10px;
@@ -252,10 +240,10 @@ section {
 .header .logo span {
   font-size: 26px;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif;
-  margin-top: 2px;
+  font-family: "Onest", serif;
+  margin-top: 3px;
   margin-left: 18px;
 }
 
@@ -288,7 +276,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Onest", serif;
   font-size: 16px;
   font-weight: 400;
   color: var(--text-color);
@@ -390,7 +378,6 @@ section {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
-
   .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
@@ -416,7 +403,7 @@ section {
   .mobile-nav-toggle {
     display: block;
   }
-
+  
   .navbar ul {
     display: none;
   }
@@ -515,7 +502,7 @@ section {
 
 .hero h1 {
   margin: 0;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: 700;
   color: var(--text-color);
 }
@@ -542,36 +529,22 @@ section {
 .hero h2 {
   color: var(--context-color);
   margin: 20px 0 0 0;
-
   font-size: 14px;
 }
 
 .hero .btn-get-started {
   margin-top: 30px;
+  margin-bottom: 16px;
   line-height: 0;
-  padding: 20px 50px;
-  border-radius: 4px;
+  padding: 20px 30px;
+  border-radius: 6px;
   transition: 0.5s;
   color: var(--text-color);
   background: var(--highlight-color);
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-}
-
-.hero .btn-config {
-  margin-top: -5px !important;
-  margin-left: 10px !important;
-  line-height: 0;
-  padding: 20px 50px;
-  border-radius: 4px;
-  transition: 0.5s;
-  text-decoration: none;
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
-  background: var(--frame-color);
 }
 
 .hero .btn-get-started span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Onest", serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -581,8 +554,56 @@ section {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
+}
+
+.hero .btn-secondary {
+  margin-left: 10px !important;
+  margin-top: -1px !important;
+  line-height: 0;
+  padding: 20px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
+  transition: .3s !important;
+}
+
+.hero .btn-secondary i {
+  padding-right: 10px;
+  margin-left: -10px;
   
 }
+
+.hero .btn-secondary:hover {
+  background-color: var(--frame-color);
+}
+
+
+
+.hero .info-button a {
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--context-color); 
+  font-weight: 600;
+  padding: 6px 12px 6px 12px;
+  border: 1px solid var(--button-color);
+  width: fit-content;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.hero .info-button a:hover {
+  background-color: var(--frame-color );
+  color: var(--text-color); 
+}
+
+.hero .info-button i {
+  padding-right: 6px;
+  margin-top:-50%;
+  font-style: normal;
+}
+
 .hero .btn-get-started:hover {
   background: var(--brighter-highlight-color);
 }
@@ -640,7 +661,7 @@ section {
   will-change: transform;
   display: flex;
   margin: auto;
-  margin-top: -67px;
+  margin-top: -69px;
   padding: 10px;
 }
 
@@ -682,7 +703,11 @@ section {
     transform: scale(1);
   }
 }
-
+@media (max-width: 1200px) {
+  .hero h1{
+    font-size: 48px; 
+  }
+}
 @media (min-width: 1024px) {
   .hero {
     background-attachment: fixed;
@@ -692,6 +717,7 @@ section {
 @media (max-width: 991px) {
   .hero {
     height: auto;
+    text-align: center;
     padding: 120px 0 60px 0;
   }
 
@@ -717,7 +743,7 @@ section {
   .hero h2 {
     font-size: 24px;
   }
-
+  
   .hero .hero-img img {
     width: 100%;
   }
@@ -768,7 +794,7 @@ section {
 }
 
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
+  font-family: "Onest", serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -784,6 +810,12 @@ section {
   transform: translateX(5px);
 }
 
+.about img {
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color:  var(--border-color);
+}
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
@@ -965,7 +997,8 @@ section {
 }
 
 .features .feature-icons {
-  margin-top: 120px;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 .tab-content p{
   color: var(--text-color);
@@ -1216,7 +1249,7 @@ section {
   font-size: 36px;
   color: #444444;
   font-weight: 600;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Onest", serif;
 }
 
 .pricing .price sup {
@@ -1262,7 +1295,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: "Onest", serif;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid var(--highlight-color);
@@ -1289,15 +1322,16 @@ section {
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
+
 .faq .accordion-collapse {
   border: 0;
 }
 
 .faq .accordion-button {
-  background: var(--button-color);
+  background: var(--frame2-color);
   border-bottom: none;
   border-width: 0px;
-  padding: 12px;
+  padding: 22px;
   border-radius: 6px !important;
   margin: 12px;
   font-weight: 600;
@@ -1318,27 +1352,31 @@ section {
   background-color: transparent !important;
 }
 
+.accordion-flush {
+  margin-right: 12px;
+  margin-left: -12px;
+  margin-bottom: -30px;
+}
+
 .accordion, .accordion-flush, .accordion-item {
   background-color: transparent !important;
 }
 .faq .accordion-button:hover {
   background-color: var(--border-color) !important;
 }
-
-.faq .accordion-button:focus {
+.faq .accordion-button {
   box-shadow: none;
 }
-
 .faq .accordion-button:not(.collapsed) {
-  background: var(--frame-color);
+  background: var(--button-color);
 }
 
 .faq .accordion-body {
   background: transparent;
   color: var(--text-color);
-  margin-left: 52px;
-  margin-right: 52px;
-  padding: 12px 12px 24px 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+  padding: 12px 12px 12px 12px;
   font-size: 14px;
   font-weight: 400;
   border-radius: 12px;
@@ -2565,8 +2603,14 @@ section {
 }
 
 @media (max-width: 992px) {
-  .footer .footer-top {
-    background-position: center bottom;
+  .footer .footer-top .container {
+    transition: all 0.5s;
+    backdrop-filter: blur(10px);
+    margin-top: -50px;
+    padding-top: 50px;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+    
   }
 }
 
@@ -2585,7 +2629,7 @@ section {
 }
 
 .footer .footer-top .footer-info .logo span {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--text-color);
@@ -2593,7 +2637,7 @@ section {
 
 .footer .footer-top .footer-info p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 13px;
   margin-bottom: 0;
   padding-top: 2px;
   color: var(--text-color);
