@@ -608,7 +608,7 @@ section {
   background: var(--brighter-highlight-color);
 }
 .hero .btn-get-started:hover i {
-  transform: rotate(90deg);
+  transform: scale(1.05);
 }
 
 .hero .hero-img {
