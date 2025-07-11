@@ -10,12 +10,11 @@
 # General
 --------------------------------------------------------------*/
 
-
 :root {
   scroll-behavior: smooth;
   --bg-color: #000000;
   --frame-color: #0d0d0d;
-  --frame2-color:#1c1c1c;
+  --frame2-color: #1c1c1c;
   --button-color: #292929;
   --border-color: #373737;
   --highlight-color: #1658ff;
@@ -26,22 +25,21 @@
 }
 
 *::-webkit-scrollbar {
-    width: 4px;
+  width: 4px;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: var(--border-color);
-    border-radius: 6px;
-    border: 0px none #000000;
+  background-color: var(--border-color);
+  border-radius: 6px;
+  border: 0px none #000000;
 }
 *::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   color: #444444;
   background: var(--bg-color);
-  
 }
 
 a {
@@ -81,8 +79,7 @@ section {
   border-radius: 12px;
 }
 
-.section-header  h2 {
-  
+.section-header h2 {
   background: var(--highlight-color);
   display: flex;
   width: fit-content;
@@ -163,10 +160,10 @@ section {
 .breadcrumbs ol a:hover {
   text-decoration: underline;
 }
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-right: 10px;
 }
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   padding-left: -10px;
@@ -232,7 +229,7 @@ section {
 
 .header.header-scrolled {
   backdrop-filter: blur(10px);
-  background: var(--frame2-color);
+  background: var(--frame1-color);
   color: var(--text-color);
   padding: 15px 0;
   border-width: 1px;
@@ -306,7 +303,7 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: gray;
 }
 
@@ -363,11 +360,11 @@ section {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: var(--text-color);
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -379,7 +376,7 @@ section {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -391,7 +388,7 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -462,7 +459,7 @@ section {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: var(--highlight-color);
 }
 
@@ -496,11 +493,11 @@ section {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: var(--highlight-color);
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -520,15 +517,15 @@ section {
   color: var(--text-color);
 }
 .hero h1 em {
-	color: var(--highlight-color);
-	font-style: normal;
+  color: var(--highlight-color);
+  font-style: normal;
   font-weight: 800;
 }
 
 .hero h1 .underline {
-	color: var(--text-color);
-	font-style: normal;
-  font-weight: 900; 
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 900;
   font-size: 22px;
   padding: 2px;
   padding-left: 12px;
@@ -536,7 +533,11 @@ section {
   margin-bottom: -62px;
   display: flex;
   border-radius: 6px;
-  background-image: linear-gradient(to left, rgba(255,0,0,0), rgb(22, 88, 255));
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0),
+    rgb(22, 88, 255)
+  );
 }
 
 .hero h2 {
@@ -581,7 +582,6 @@ section {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
-  
 }
 .hero .btn-get-started:hover {
   background: var(--brighter-highlight-color);
@@ -593,7 +593,7 @@ section {
 .hero .hero-img {
   text-align: right;
 }
-.hero .hero-img img{
+.hero .hero-img img {
   border: 1px solid var(--border-color);
   border-radius: 12px;
   animation: hero-img-bg 3s ease-in-out infinite;
@@ -630,7 +630,6 @@ section {
 
 .hero .hero-notif p {
   padding: 6px !important;
-
 }
 
 .hero-arrow-down {
@@ -733,7 +732,7 @@ section {
   border-radius: 12px 0px 0px 12px;
   border-width: 1px 0px 1px 1px;
   border-style: solid;
-  border-color:  var(--border-color);
+  border-color: var(--border-color);
   background-color: var(--frame-color);
   padding: 40px;
 }
@@ -967,7 +966,7 @@ section {
 .features .feature-icons {
   margin-top: 120px;
 }
-.tab-content p{
+.tab-content p {
   color: var(--text-color);
   font-size: 12px;
 }
@@ -993,7 +992,7 @@ section {
 
 .features .feature-icons .content .icon-box:hover {
   background-color: var(--frame-color);
-  
+
   padding-top: 14px;
   cursor: default;
   padding-bottom: 14px;
@@ -1029,7 +1028,7 @@ section {
   font-size: 12px;
   margin: 10px 0 0 0;
   font-weight: 400;
-  color:var(--context-color);
+  color: var(--context-color);
 }
 
 /*--------------------------------------------------------------
@@ -1318,7 +1317,9 @@ section {
   background-color: transparent !important;
 }
 
-.accordion, .accordion-flush, .accordion-item {
+.accordion,
+.accordion-flush,
+.accordion-item {
   background-color: transparent !important;
 }
 .faq .accordion-button:hover {
@@ -1542,7 +1543,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1550,7 +1554,10 @@ section {
   border: 1px solid var(--highlight-color);
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--highlight-color);
 }
 
@@ -1573,7 +1580,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1966,7 +1973,7 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--highlight-color);
   border: 0;
   padding: 10px 30px;
@@ -1975,7 +1982,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -2038,7 +2045,7 @@ section {
   margin: 0;
 }
 
-.blog .entry .entry-meta ul li+li {
+.blog .entry .entry-meta ul li + li {
   padding-left: 20px;
 }
 
@@ -2155,7 +2162,7 @@ section {
   display: inline-block;
 }
 
-.blog .entry .entry-footer .tags li+li::before {
+.blog .entry .entry-footer .tags li + li::before {
   padding-right: 6px;
   color: #6c757d;
   content: ",";
@@ -2374,7 +2381,7 @@ section {
   position: relative;
 }
 
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -2411,7 +2418,7 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {
+.blog .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
@@ -2430,7 +2437,7 @@ section {
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item+.post-item {
+.blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -2530,13 +2537,13 @@ section {
   border: 1px solid #e1ecff;
 }
 
-.footer .footer-newsletter form input[type=email] {
+.footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
 }
 
-.footer .footer-newsletter form input[type=submit] {
+.footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -2552,7 +2559,7 @@ section {
   border-radius: 4px;
 }
 
-.footer .footer-newsletter form input[type=submit]:hover {
+.footer .footer-newsletter form input[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -2606,7 +2613,7 @@ section {
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
-  
+
   background: var(--highlight-color);
   width: fit-content;
   letter-spacing: 1px;
@@ -2658,7 +2665,7 @@ section {
 }
 
 .footer .footer-top .footer-links ul a {
-  color: var(--text-color);;
+  color: var(--text-color);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
